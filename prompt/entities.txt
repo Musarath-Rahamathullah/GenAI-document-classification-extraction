@@ -1,0 +1,85 @@
+<!-- Here are the entities for different classfication categories: -->
+<entities>
+<!-- Entities for Task Card: -->
+<Task_Card_entities>
+{{"classification": "Task card",
+"entities": {{"AircraftIdentification":{{"ModelName":"","RegNo":"","SerialNo":""}}
+            "Times": "<entityValue - Hours and Cycles in Header section>",
+             "Work Order and Facility": "<entityValue - from side text>",
+             "Tasks" : [{{"Task1" : "<Task Number>","Description1" : "< Description from detail section>","Part Number OFF": "<entityValue>",
+                            "Serial Number OFF" : "<entityValue>","Part Number ON" : "<entityValue>","Serial Number ON" : "<entityValue>","Removal Code" : "<entityValue>",
+                            "Installation Status" : "<entityValue>"}},
+                         {{"Task2" : "<Task Number>","Description2" : "< Description from detail section>","Part Number OFF": "<entityValue>",
+                            "Serial Number OFF" : "<entityValue>","Part Number ON" : "<entityValue>","Serial Number ON" : "<entityValue>","Removal Code" : "<entityValue>",
+                            "Installation Status" : "<entityValue>"}},
+                        .
+                        .
+                        .],
+            
+            "TSN/TSO/TSR details" : "< entityvalue - from Detail section>"
+             ]}}
+        }}        
+</Task_Card_entities>
+
+<!-- Entities for Form 1: -->
+<Form1_entities>
+{{"classification": "Form 1",
+"entities": {{"Form Tracking Number":"<entityValue>",
+            "Approving Authority": "<entityValue>",
+            "Item": "<entityValue>",
+            "Description": "<entityValue>",
+            "Part No": "<entityValue>",
+            "Qty": "<entityValue>",
+            "Serial No.": "<entityValue>",
+            "Status/Work": "<entityValue>",
+            "Remarks": "<entityValue>",
+            "Name": "<entityValue>",
+            "Authorization Number": "<entityValue>",
+            "Date": "<entityValue>"
+            }}
+}}
+</Form1_entities>
+
+<!-- Entities for Form 8130: -->
+<Form8130_entities>
+{{"classification": "Form 8130",
+"entities": {{"Form Tracking Number":"<entityValue>",
+            "Approving Authority": "<entityValue>",
+            "Item": "<entityValue>",
+            "Description": "<entityValue>",
+            "Part No": "<entityValue>",
+            "Qty": "<entityValue>",
+            "Serial No.": "<entityValue>",
+            "Status/Work": "<entityValue>",
+            "Remarks": "<entityValue>",
+            "Name": "<entityValue>",
+            "Authorization Number": "<entityValue>",
+            "Date": "<entityValue>"
+            }}
+}}
+<\Form8130_entities>
+
+<!-- Entities for Logbook Entry: -->
+<logbook_entry_entities>
+{{"classification": "Logbook Entry",
+"entities": {{"AircraftIdentification":{{"ModelName":"","RegNo":"","SerialNo":""}}
+            "Times": "<entityValue - Hours and Cycles in Header section>",
+            "Tasks" : [{{"Task Number" : "<entityValue>", "Description/Resolution" : "<entityValue>","Date" : "< extract the date present with-in the description>"}},
+                        {{"Task Number" : "<entityValue>", "Description/Resolution" : "<entityValue>","Date" : "<extract the date present with-in the description>"}},
+                        .
+                        .
+                        .
+                        .]
+              }}
+}}
+</logbook_entry_entities>
+
+
+<!-- Entities for Other: -->
+<other_entities>
+{{"classification": "Other",
+"entities": ""
+}}
+<\other_entities>
+
+</entities>
